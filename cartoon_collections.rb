@@ -21,7 +21,9 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.select{ |n| 
     if cheese_types.include? n;
-        return n 
+      return n 
+    elsif !cheese_types.include? n;
+      return nil
     end 
   }
 end
