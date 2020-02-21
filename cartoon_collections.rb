@@ -22,7 +22,7 @@ def find_the_cheese(array)
   array.select{ |n| 
     if cheese_types.include? n;
       return n 
-    elsif !cheese_types.include? n;
+    elsif !cheese_types.any? n;
       return nil
     end 
   }
