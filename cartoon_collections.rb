@@ -22,8 +22,8 @@ def find_the_cheese(array)
   value = nil
   array.select{ |n| 
     if cheese_types.include? n;
-      value = n 
+        return n 
     end 
   }
-  value
+
 end
