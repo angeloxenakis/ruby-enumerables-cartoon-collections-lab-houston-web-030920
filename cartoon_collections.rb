@@ -8,11 +8,14 @@ def summon_captain_planet(rings)
 end
 
 def long_planeteer_calls(rings)
+  value = false
   rings.select{
     |n|
-    if n > 4;
+    if n.length > 4;
+      value = true
     end
   }
+  value
 end
 
 def find_the_cheese# code an argument here
