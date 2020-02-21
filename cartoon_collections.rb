@@ -23,6 +23,8 @@ def find_the_cheese(array)
   array.select{ |n| 
     if cheese_types.include? n;
       value = n 
+    else 
+      value = value
     end 
   }
   value
