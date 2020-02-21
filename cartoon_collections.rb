@@ -20,12 +20,15 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   value = nil
+  found_cheese = []
   array.select{ |n| 
     if cheese_types.include? n;
-      value = n 
-    else 
-      value = value
+      found_cheese << n
     end 
   }
-  value
+  if founde_cheese.length > 0 
+    return founde_cheese[0]
+  else
+    return value
+  end
 end
