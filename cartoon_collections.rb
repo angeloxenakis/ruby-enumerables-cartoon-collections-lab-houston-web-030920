@@ -1,13 +1,19 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(dwarves)
+  list_num = 1
+  dwarves.each{|n| p "#{list_num}. #{n}"; list_num += 1}
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(rings)
+  rings.map{|n| n = "#{n.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(rings)
+  rings.select{
+    |n|
+    if n > 4;
+      n = true
+    end
+  }
 end
 
 def find_the_cheese# code an argument here
