@@ -26,8 +26,8 @@ def find_the_cheese(array)
       found_cheese << n
     end 
   }
-  if founde_cheese.length > 0 
-    return founde_cheese[0]
+  if found_cheese.length > 0 
+    return found_cheese[0]
   else
     return value
   end
