@@ -19,11 +19,11 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  value = nil
   array.select{ |n| 
     if n == cheese_types[0] || n == cheese_types[1] || n == cheese_types[2];
       return n 
     else
-      return nil
     end 
   }
 end
