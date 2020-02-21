@@ -23,6 +23,4 @@ def find_the_cheese(array)
     if n = cheese_types[0] || n = cheese_types[1] || n = cheese_types[2];
       return n 
     end 
-    
-  
 end
