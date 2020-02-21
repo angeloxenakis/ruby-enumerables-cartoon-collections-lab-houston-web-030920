@@ -23,8 +23,6 @@ def find_the_cheese(array)
   array.select{ |n| 
     if n == cheese_types[0] || n == cheese_types[1] || n == cheese_types[2];
       value = n 
-    else 
-      value = nil
     end 
   }
   value
