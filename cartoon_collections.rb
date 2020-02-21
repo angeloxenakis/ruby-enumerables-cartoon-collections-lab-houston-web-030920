@@ -9,8 +9,7 @@ end
 
 def long_planeteer_calls(rings)
   value = false
-  rings.select{
-    |n|
+  rings.select{ |n|
     if n.length > 4;
       value = true
     end
@@ -18,7 +17,12 @@ def long_planeteer_calls(rings)
   value
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  array.select{ |n| 
+    if n = cheese_types[0] || n = cheese_types[1] || n = cheese_types[2];
+      return n 
+    end 
+    
+  
 end
