@@ -11,7 +11,6 @@ def long_planeteer_calls(rings)
   rings.select{
     |n|
     if n > 4;
-      n = true
     end
   }
 end
